@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: 23f1002830@ds.study.iitm.ac.in
         run: echo "Hello, world!" >> random.txt
       - name: Commit and push changes
